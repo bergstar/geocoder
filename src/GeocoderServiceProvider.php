@@ -10,7 +10,7 @@ class GeocoderServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/geocoder.php' => config_path('geocoder.php'),
+            __DIR__.'/../config/geocoder.php' => $this->config_path('geocoder.php'),
         ], 'config');
     }
 
@@ -25,5 +25,10 @@ class GeocoderServiceProvider extends ServiceProvider
                 ->setRegion(config('geocoder.region'))
                 ->setBounds(config('geocoder.bounds'));
         });
+    }
+
+    function config_path($path = '')
+    {
+        return app()->basePath() . '/config' . ($path ? '/' . $path : $path);
     }
 }
