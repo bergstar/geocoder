@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Geocoder\Tests;
+namespace Bergstar\Geocoder\Tests;
 
 use GuzzleHttp\Client;
-use Spatie\Geocoder\Geocoder;
+use Bergstar\Geocoder\Geocoder;
 
 class GeocoderTest extends TestCase
 {
-    /** @var \Spatie\Geocoder\Geocoder */
+    /** @var \Bergstar\Geocoder\Geocoder */
     protected $geocoder;
 
     public function setUp()

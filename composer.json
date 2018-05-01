@@ -1,7 +1,7 @@
 {
-    "name": "spatie/geocoder",
+    "name": "bergstar/geocoder",
     "description": "Geocoding addresses to coordinates",
-    "homepage": "https://github.com/spatie/geocoder",
+    "homepage": "https://github.com/bergstar/geocoder",
     "keywords":
         [
             "geocode",
@@ -12,6 +12,10 @@
         ],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Dmitry K Valberg",
+            "email": "dmitry@bergstar.no"
+        },
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be"
@@ -29,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Geocoder\\": "src"
+            "Bergstar\\Geocoder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Geocoder\\Tests\\": "tests"
+            "Bergstar\\Geocoder\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Geocoder\\GeocoderServiceProvider"
+                "Bergstar\\Geocoder\\GeocoderServiceProvider"
             ],
             "aliases": {
-                "Geocoder": "Spatie\\Geocoder\\Facades\\Geocoder"
+                "Geocoder": "Bergstar\\Geocoder\\Facades\\Geocoder"
             }
         }
     }

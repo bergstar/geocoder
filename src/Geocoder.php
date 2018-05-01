@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Geocoder;
+namespace Bergstar\Geocoder;
 
 use GuzzleHttp\Client;
-use Spatie\Geocoder\Exceptions\CouldNotGeocode;
+use Bergstar\Geocoder\Exceptions\CouldNotGeocode;
 
 class Geocoder
 {

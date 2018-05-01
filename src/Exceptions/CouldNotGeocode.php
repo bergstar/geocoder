@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder\Exceptions;
+namespace Bergstar\Geocoder\Exceptions;
 
 use Exception;
 

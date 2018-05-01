@@ -36,7 +36,7 @@ Geocoder::getCoordinatesForAddress('Samberstraat 69, Antwerpen, Belgium');
 You can install this package through composer.
 
 ```bash
-composer require spatie/geocoder
+composer require bergstar/geocoder
 ```
 ## Laravel installation
 
@@ -48,7 +48,7 @@ In Laravel 5.5 the package will autoregister itself. In older versions of Larave
 // config/app.php
 'providers' => [
     '...',
-    Spatie\Geocoder\GeocoderServiceProvider::class
+    Bergstar\Geocoder\GeocoderServiceProvider::class
 ];
 ```
 
@@ -56,14 +56,14 @@ In Laravel 5.5 the package will autoregister itself. In older versions of Larave
 // config/app.php
 'aliases' => array(
 	...
-	'Geocoder' => Spatie\Geocoder\Facades\Geocoder::class,
+	'Geocoder' => Bergstar\Geocoder\Facades\Geocoder::class,
 )
 ```
 
 Next, you must publish the config file :
 
 ```bash
-php artisan vendor:publish --provider="Spatie\Geocoder\GeocoderServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Bergstar\Geocoder\GeocoderServiceProvider" --tag="config"
 ```
 
 This is the content of the config file:

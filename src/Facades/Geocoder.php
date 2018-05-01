@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder\Facades;
+namespace Bergstar\Geocoder\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

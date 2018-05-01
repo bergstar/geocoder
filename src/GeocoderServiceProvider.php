@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Geocoder;
+namespace Bergstar\Geocoder;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
